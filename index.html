@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Document</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        #content { display: none; }
+    </style>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            if (password === 'PrevailHR2024') {
+                document.getElementById('content').style.display = 'block';
+                document.getElementById('login').style.display = 'none';
+            } else {
+                alert('Incorrect password');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="login">
+        <h2>Please enter the password to access the document</h2>
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    <div id="content">
+        <h1>Protected Document</h1>
+        <iframe src="https://doc.clickup.com/9010083364/p/h/8cgnxh4-300716/bb6edf94d0b953d" width="100%" height="600px"></iframe>
+    </div>
+</body>
+</html>
