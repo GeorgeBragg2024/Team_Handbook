@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protected Document</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        #content { display: none; }
+        body { margin: 0; padding: 0; }
+        #content { display: none; width: 100vw; height: 100vh; }
+        #login { display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; }
     </style>
     <script>
         function checkPassword() {
             const password = document.getElementById('password').value;
-            if (password === 'PrevailHR2024') {
+            if (password === 'PrevailHandbook2024') {
                 document.getElementById('content').style.display = 'block';
                 document.getElementById('login').style.display = 'none';
             } else {
@@ -27,8 +28,8 @@
         <button onclick="checkPassword()">Submit</button>
     </div>
     <div id="content">
-        <h1>Protected Document</h1>
-        <iframe src="https://doc.clickup.com/9010083364/p/h/8cgnxh4-300716/bb6edf94d0b953d" width="100%" height="600px"></iframe>
+        <iframe src="https://doc.clickup.com/9010083364/p/h/8cgnxh4-300716/bb6edf94d0b953d" width="100%" height="100%"></iframe>
     </div>
 </body>
 </html>
+
